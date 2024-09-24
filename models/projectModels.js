@@ -1,17 +1,13 @@
 const mongoose = require('mongoose')
 const projectSchema = new mongoose.Schema({
-    name:{
+    title:{
         type:String,
         required : true
     },
-    email:{
+    desc:{
         type:String,
         required:true
     },
-    password:{
-        type:String,
-        required:true
-    }
 })
 const Projects = mongoose.model("Projects",projectSchema)
-module.exports=Projects;
+module.exports=Projects; 
